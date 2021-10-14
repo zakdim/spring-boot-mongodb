@@ -27,3 +27,14 @@ docker logs -f <CONTAINER_ID>
 ``` 
 mvn spring-boot:run
 ```
+
+### Lecture 266: Assigning Storage
+
+```
+$ cd
+$ mkdir -p dockerdata/mongo
+$ docker run -p 27017:27017 \
+  -v $HOME/dockerdata/mongo:/data/db \
+  -d mongo
+
+```
