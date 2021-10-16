@@ -38,3 +38,15 @@ $ docker run -p 27017:27017 \
   -d mongo
 
 ```
+
+### Lecture 268: Run Rabbit MQ Container
+
+``` 
+$ docker run -d \
+    --hostname guru-rabbit \
+    --name some-rabbit \
+    -p 8080:15672 \
+    -p 5671:5671 \
+    -p 5672:5672 \
+    rabbitmq:3-management
+```
