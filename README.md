@@ -50,3 +50,32 @@ $ docker run -d \
     -p 5672:5672 \
     rabbitmq:3-management
 ```
+
+### Lecture 269: Assignment - Run MySQL in a Container
+
+``` 
+$ cd $HOME/tmp
+
+$ docker run \
+    --name guru-mysql \
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=yes \
+    -v $HOME/tmp:/var/lib/mysql \
+    -p 3306:3306 \
+    -d mysql:5.7
+```
+
+### Lecture 270: Assignment Review
+
+* Download [Sequel Pro](https://www.sequelpro.com/)
+
+* Sequel Pro - Enter connection deails:
+
+Option: **Standard**
+
+| Key       | Value     |
+| --------- | --------- |
+| Name:     | 127.0.0.1 |
+| Host:     | 127.0.0.1 |
+| Username: | root      |
+| Database: | optional  |
+| Port:     | 3306      |
